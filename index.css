@@ -1,4 +1,21 @@
-.master {
-    display: flex;
-    
+body, h1 {
+    margin: 0;
 }
+
+#master {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: chartreuse;
+}
+
+#loginui {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: darkolivegreen;
+}
+
