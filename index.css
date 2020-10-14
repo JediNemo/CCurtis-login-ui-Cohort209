@@ -2,13 +2,13 @@ body, h1 {
     margin: 0;
 }
 
-#master {
+.master {
     display: flex;
     height: 100vh;
     width: 100vw;
     align-items: center;
     justify-content: center;
-    background-color: chartreuse;
+    background-color: rgb(89, 0, 255);
 }
 
 #loginui {
@@ -16,6 +16,25 @@ body, h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: darkolivegreen;
+    background-color: rgb(224, 18, 18);
+    height: 200px;
+    width: 200px;
+    border-radius: 10%;
+    border-width: 50px;
+    border-color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex: space-around;
+}
+
+button{
+    border: none;
+    border-radius: 25%;
 }
 
