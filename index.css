@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+
 body, h1 {
     margin: 0;
 }
@@ -8,7 +10,9 @@ body, h1 {
     width: 100vw;
     align-items: center;
     justify-content: center;
-    background-color: rgb(89, 0, 255);
+    /*background-color: rgb(89, 0, 255);*/
+    background: url(http://www.gymstarsmodesto.com/Share/pexels-pixabay-39561.jpg);
+    background-size: 100vw;
 }
 
 #loginui {
@@ -16,25 +20,55 @@ body, h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(224, 18, 18);
-    height: 200px;
-    width: 200px;
+    background-color: rgba(175, 155, 150, .9);
+    min-width: 300px;
+    min-height: 350px;
     border-radius: 10%;
     border-width: 50px;
     border-color: black;
+    /*Box Shadow */
+    -webkit-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.6);
+    box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.6);
+    font-family: 'Raleway', sans-serif;
 }
 
 form {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
-    flex: space-around;
+    flex-grow: 2;
+    padding: 10%;
 }
 
-button{
-    border: none;
-    border-radius: 25%;
+.userinput {
+    border-top: none;
+    border-left: none;
+    border-botom: 5px solid black;
+    border-right: none;
+    background: rgba(255,255,255,0.5);
+    width: 100%;
+    height: 25px;
+}
+
+#go {
+    border: 1px solid darkblue;
+    border-radius: 25px;
+    height: 50px;
+    width: 200px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    /*button gradient*/
+    background: rgba(183,222,237,1);
+    background: -moz-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(183,222,237,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(183,222,237,1)), color-stop(50%, rgba(113,206,239,1)), color-stop(51%, rgba(33,180,226,1)), color-stop(100%, rgba(183,222,237,1)));
+    background: -webkit-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(183,222,237,1) 100%);
+    background: -o-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(183,222,237,1) 100%);
+    background: -ms-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(183,222,237,1) 100%);
+    background: linear-gradient(to bottom, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(183,222,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed', GradientType=0 );
+
 }
 
